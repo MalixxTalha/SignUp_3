@@ -241,7 +241,7 @@ input:focus {
 button[type="submit"] {
     background-color: #c4c4c4;
     color: white;
-    padding: 4px 14px;
+    padding: 6px 45px;
     border: none;
     border-radius: 18px;
 }
@@ -249,9 +249,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #fff0f0;
     color: #7d7373;
-    padding: 4px 14px;
     border: 1px solid #858585;
-    border-radius: 18px;
     transition: all 500ms;
 }
 
