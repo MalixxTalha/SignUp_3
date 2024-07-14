@@ -1,0 +1,190 @@
+@media (max-width:1200px) {
+
+
+    .signUp-heading h3 {
+        font-size: 20px;
+        margin-bottom: 3px;
+    }
+
+    .signUp-heading p {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+
+    .correction-list {
+        font-size: 14px;
+    }
+
+}
+
+@media  (max-width:991px) {
+    /* header */
+    /* .aside-icon{
+        display: block  ;
+    }
+    .nav{
+        display: none;
+    } */
+     .language{
+        display: none;
+     }
+     #search{
+        display: none;
+     }
+     .header-circle{
+        display: none;
+     }
+     .container{
+        margin-top: 35px;
+     }
+}
+@media  (max-width:992px) {
+    /* header */
+    
+    .signUp {
+        width: 68%;
+        padding: 0px;
+    }
+    .signUp-heading h3 {
+        font-size: 21px;
+        margin-bottom: 2px;
+    }
+
+    .signUp-heading p {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+
+    ul {
+        gap: 29px;
+        font-size: 12px;
+    }
+    .un-list ul li {
+        width: 168px;
+    }
+    .padding {
+        padding-top: 48px;
+    }
+/* image */
+
+}
+
+@media (max-width:768px) {
+    /* header */
+    .header a {
+        font-size: 15px;
+    }
+    .btn-signup,.btn-login {
+        font-size: 12px;
+    }
+    .signUp {
+        width: 90%;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:601px) {
+    .header a {
+        font-size: 13px;
+    }
+    .btn-signup, .btn-login {
+        font-size: 12px;
+    }
+}
+@media (max-width:557px) {
+    .header a {
+        font-size: 12px;
+    }
+    .btn-signup, .btn-login {
+        font-size: 10px;
+        padding: 3px 12px;
+    }
+
+}
+@media (max-width:576px) {
+    /* header */
+    
+    .signUp-heading h3 {
+        font-size: 19px;
+        margin-bottom: 1px;
+    }
+    .signUp-heading p {
+        font-size: 11px;
+        margin-bottom: 0px;
+    }
+    label {
+        font-size: 12px;
+        padding-bottom: 1px;
+    }
+    input [type="text" ] {
+        border-radius: 5px;
+        height: 26px;
+        font-size: 12px !important;
+        padding: 2px 5px;
+    
+    }
+    small #hide-show {
+        color: #858585;
+        font-size: 12px;
+    }
+    .password-div img {
+        width: 16px ;
+        height: 15px ;
+    }
+}
+
+
+@media (max-width:499px) {
+    .header-btn{
+        display: none !important;
+    }
+    .header {
+        padding: 6px 13px;
+        width: 100%;
+    }
+    .nav{
+        width: 100%;
+    }
+    .nav>div{
+        width: 100%;
+    }
+    .nav:nth-child(2){
+        width: 100%;
+    }
+}
+@media (max-width:435px) {
+    .signUp-heading h3 {
+        font-size: 19px;
+        margin-bottom: 1px;
+    }
+
+    .signUp-heading p {
+        font-size: 11px;
+        margin-bottom: 0px;
+    }
+
+    label {
+        font-size: 11px;
+        padding-bottom: 0px;
+    }
+    
+    .pass-icon {
+        width: 14px;
+        height: 14px;
+    }
+    
+    ul li {
+        width: 140px;
+    }
+}
+    @media (max-width:375px) {
+        .header {
+            padding: 6px 6px;
+            width: 100%;
+        }
+    }

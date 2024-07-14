@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
+    <!-- font awosome -->
+    <script src="https://kit.fontawesome.com/94584f8f7b.js" crossorigin="anonymous"></script>
+    <!-- Google Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header class="header-div">
+        <div class="header d-flex justify-content-between align-items-center">
+            <div class="nav">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="header-circle"></span>
+                    <div class="header d-flex justify-content-between align-items-center gap-3">
+                        <a href="#" active>Home</a>
+                        <a href="#">Web designs</a>
+                        <a href="#">Mobile designs</a>
+                        <a href="#">Illustrations</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex  justify-content-between align-items-center gap-3 ">
+                <input type="text" name="search" id="search" placeholder="Search">
+                <div class="language">
+                    <select id="langSelector">
+                        <option value="en">English (united States)</option>
+                        <option value="it">Italian</option>
+                        <option value="es">Espanol</option>
+                        <option value="de">Dutch</option>
+                        <option value="zh">Chinese</option>
+                    </select>
+                </div>
+                <div class="d-flex  justify-content-between align-items-center gap-2 header-btn">
+                    <button class="btn-login">Log in</button>
+                    <button class="btn-signup">Sign up</button>
+                </div>
+                <!-- <div class="aside-icon">
+                    <i class="fa-solid fa-bars" id="asideicon" style="color: #000000;" onclick="toggleMenu()"></i>
+                </div> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- mobile navbar -->
+    <!-- <aside class="mobile-navbar">
+
+        <div class=" d-flex justify-content-end align-items-end">
+            <i class="fa-regular fa-x" onclick="toggleClose()" class="closeIcon"></i>
+        </div>
+        <div class="aside-navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Web designs</a>
+            <a href="#about">Mobile designs</a>
+            <a href="#faq">Illustrations</a>
+        </div>
+    </aside> -->
+
+
+    <div class="row m-0">
+        <div class="col-lg-6 p-0 bg-div   d-lg-block d-md-none d-sm-none d-none">
+            <div class="bg ">
+                <img src="./assets/images/bg/Image.png" alt="signUp image" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center p-0">
+            <div class="container  d-flex justify-content-center">
+                <div class="signUp ">
+                    <div class="signUp-heading">
+                        <h3>Sign up</h3>
+                        <p>Sign up for free to access to in any of our products</p>
+                    </div>
+                    <div class="form_div">
+                        <form action="?" name="signUpForm" method="POST">
+                            <div class="d-flex flex-column ">
+                                <div class="d-flex justify-content-between">
+                                    <label for="email" id="email">Email address</label>
+                                    <small class="error" id="errorEmail"></small>
+                                </div>
+                                <input type="text" name="email" id="suEmail">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <label for="password">Password</label>
+                                    <div onclick="pass()" id="pass-HS-icon">
+
+                                        <img src="./assets/images/icons/pass-hide.png" class="pass-icon" id="pass-icon">
+                                        <small id="hide-show">Hide</small>
+                                    </div>
+                                </div>
+                                <input type="password" name="password" id="suPassword" onkeyup="return pass_rule()">
+                                <small>Use 8 or more characters with a mix of letters, numbers & symbols</small>
+                            </div>
+                            <div class="d-flex align-items-start ">
+                                <input type="checkbox" name="agreement" value="updates" checked>
+                                <label for="agreement">Agree to our <a href="#">Terms of
+                                        use</a> and <a href="">Privacy Policy.</a></label>
+                            </div>
+                            <div class="d-flex align-items-start ">
+                                <input type="checkbox" name="news" value="updates" checked>
+                                <label for="news">Subscribe to our monthly newsletter</label>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LePtg8qAAAAAIOyJtflLV4L3Xx-cwLhtB61sKGo" style="transform:scale(0.77);-webkit-transform:scale(0.77);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+                            
+                            <div class="btn-div">
+                                <button onclick="submitForm(event)" type="submit">Create an account</button>
+                            </div>
+                            <p>Already have an account?<a href="">Log in</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./assets/js/signup.js"></script>
+    <!-- response css -->
+    <link rel="stylesheet" href="./assets/css/Responsive.css">
+    <!-- bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
